@@ -118,7 +118,14 @@ button:hover {
  100%  {top:0;}
 }
 #picture{
- display:none;
+  z-index: 100;
+  position: absolute;
+  top:0px;
+  max-height: 200px;
+  max-width: 300px;
+  left:0%;
+  opacity: 0.7;
+  
 }
 h1 {
  font-size:35px;
@@ -147,7 +154,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #map{background:blue;
 height:500px;
-
+display: none;
 width:100%;}
 
 
@@ -177,6 +184,9 @@ top:0;}
 #page2, #page3 {
   position:absolute;
   width:100%;
+}
+#pano {
+  width: 80%
 }
 
 

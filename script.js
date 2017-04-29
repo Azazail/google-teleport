@@ -106,10 +106,10 @@ $(document).ready(function(){
 $("#collapse").click(function(){
     $("#info").toggle();
 
-});jsonG("48.8566","2.3522");
+});//jsonG("48.8566","2.3522");
 });
 function jsonG (lat,lon){
-    var url="https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=imperial&appid=1ae7bfb22f272700d9eafbc95c46f842";
+    var url="http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=imperial&appid=1ae7bfb22f272700d9eafbc95c46f842";
     $.getJSON(url, function(response) { 
           decode(response);
     }).fail (function(response) {
