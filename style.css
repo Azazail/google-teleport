@@ -94,6 +94,7 @@ button:hover {
 #camera {
   height: 500px;
   z-index:0;
+  width: 100%;
 }
 
 #bar { 
@@ -110,6 +111,8 @@ button:hover {
 
 #cameracontainer{
   position:relative;
+  width: 700px;
+  margin: 0 auto;
 }
 
 @keyframes scanner {
@@ -189,7 +192,9 @@ top:0;}
   width: 80%
 }
 
-
+#page2 {
+  text-align: center;
+}
 
 
 
