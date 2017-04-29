@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Map Transportator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">.
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/amw/jpeg_camera/master/dist/swfobject.min.js"></script>
+    <script src="https://cdn.rawgit.com/amw/jpeg_camera/master/dist/jpeg_camera.min.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="screen1">
+        <h1> Google Teleport</h1>
+        <p>Welcome to Google Teleport</p>
+        <p>This is a verified teleportation access point</p>
+        <p>Please Enter Your ID</p> <input type="text" id="username">
+        <button id = 'loginbutton'> Login </button>
+    </div>
+    <div id="page2">
+        <h1> Welcome User</h1>
+        <p>Are you ready?</p>
+        <p> Phototron 2300™</p>
+
+        <div id="cameracontainer">
+            <div id="camera"> </div>
+            <div id="bar">
+
+            </div>
+        </div>
+
+        <button id="Scan">Take picture</button>
+    </div>
+    <img id="picture">
+    <div id = "page3">
+        <div id="login">
+
+        </div>
+
+        <div id="pano"></div>
+        <button id="eiffletower">Eiffle Tower</button>
+        <button id="forbiddencity">Forbidden City</button>
+        <button id="spaceneedle">Space Needle</button>
+        <button id="empirestatebuilding">Empire State Building</button>
+        <button id="grandcanyon">Grand Canyon</button>
+        <button id="colosseum">The Colosseum</button>
+        <input id="location">
+        <button id="url">Go any where</button>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCNEPrWrvQ2xaMM58yC0XepKtaTuWlwHc">
+        </script>
+   
+    
+        <div id="map">
+
+
+
+        </div>
+        <div id="info">
+            <p>Welcome <span class="name">NAME</span></p>
+            <p>Location: <span class="location">NAME</span></p>
+            <p>Temperature: <span class="temperature">NAME</span></p>
+            <p>Wind pressure: <span class="pressure">NAME</span></p>
+            <p>Humidity: <span class="humidity">NAME</span> </p>
+            <p>Not happy with where you are?</p>
+            <input>
+            <button>change location</button>
+        </div><button id="collapse">collapse</button>
+    </div>
+</body>
+
+</html>
