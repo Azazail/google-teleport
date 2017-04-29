@@ -97,6 +97,7 @@ $("#url").click(function(){
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({address: place} ,function(results){
       var area = results[0].geometry.location;
+      jsonG(area.lat(),area.lng());
       panorama.setPosition(area);
         });
     
